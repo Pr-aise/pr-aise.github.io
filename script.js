@@ -203,7 +203,7 @@ async function playInstructionVideo() {
     videoCanvas.style.left = '0';
     videoCanvas.style.top = '0';
     videoCanvas.width = 600;
-    videoCanvas.height = 1024;
+    videoCanvas.height = 450;
 
     videoContainer.style.position = 'relative';
     videoContainer.appendChild(videoCanvas);
