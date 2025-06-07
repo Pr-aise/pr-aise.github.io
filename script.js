@@ -42,7 +42,7 @@ async function init() {
         maxPredictions = model.getTotalClasses();
 
         const width = 600;
-        const height = 600;
+        const height = 1024;
         const flip = true;
         webcam = new tmPose.Webcam(width, height, flip);
         await webcam.setup();
