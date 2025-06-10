@@ -8,7 +8,7 @@
 // Model URL from Teachable Machine
 //**************************************************
 //* as before, paste your lnk below
-let URL = "https://teachablemachine.withgoogle.com/models/CMBhs4EAW/";
+let URL = "https://teachablemachine.withgoogle.com/models/Y4rnrgo8x/";
 
 
 
@@ -118,28 +118,28 @@ function checkPose(prediction, video) {
 
         switch(poseNumber) {
             case '1':
-                if (time >= 0.03 && time <= 1.0 && !poseState.triggered) {
+                if (time >= 0.03 && time <= 0.08 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
             case '2':
-                if (time >= 0.05 && time <= 1.0 && !poseState.triggered) {
+                if (time >= 0.09 && time <= 0.15 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
             case '3':
-                 if (time >= 0.07 && time <= 1.0 && !poseState.triggered) {
+                 if (time >= 0.16 && time <= 0.22 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 
                 break;
             case '4':
-                if (time >= 0.11 && time <= 0.13 && !poseState.triggered) {
+                if (time >= 0.23 && time <= 0.26 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
             case '5':
-                if (time >= 0.14 && time <= 0.16 && !poseState.triggered) {
+                if (time >= 0.27 && time <= 0.32 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
@@ -224,7 +224,7 @@ async function playInstructionVideo() {
     if (model) {
         processFrame();
     } else {
-        console.log("https://teachablemachine.withgoogle.com/models/CMBhs4EAW/");
+        console.log("https://teachablemachine.withgoogle.com/models/Y4rnrgo8x/");
     }
 }
 
